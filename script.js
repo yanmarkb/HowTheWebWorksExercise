@@ -1,0 +1,10 @@
+const url = new URL("https://example.com/path?param1=value1&param2=value2");
+console.log(url);
+console.log(url.protocol);
+console.log(url.hostname);
+console.log(url.pathname);
+console.log(url.search);
+console.log(url.searchParams.get("param1"));
+console.log(url.searchParams.get("param2"));
+url.searchParams.set("param3", "value3");
+console.log(url.href);
