@@ -40,6 +40,7 @@ Examples: Hostnames, date your browser thinks it is, language your browser wants
 
 - What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
 
+Steps:
 1. The browser uses the DNS lookup the domain name.
 2. The browser connects to the server using the IP address and HTTP port.
 3. The browser sens an HTTP GET with a specific path.
@@ -49,8 +50,16 @@ Examples: Hostnames, date your browser thinks it is, language your browser wants
 ## ****Part Two: Practice Tools****
 
 1. Using ***curl***, make a ***GET*** request to the *icanhazdadjoke.com* API to find all jokes involving the word “pirate”
+
+curl -H "Accept: application/json" "https://icanhazdadjoke.com/search?term=pirate"
+
 2. Use ***dig*** to find what the IP address is for *icanhazdadjoke.com*
+
+dig +short icanhazdadjoke.com
+
 3. Make a simple web page and serve it using ***python3 -m http.server***. Visit the page in a browser.
+
+After making the HTML I got to terminal and I type python3 -m http.server in the directory with the HTML.
 
 ## **Part Three: Explore Dev Tools**
 
